@@ -3,134 +3,138 @@
   <head>
     <title>Planets</title>
     <style>
-    body {
-      background: #222;
-    }
-    /*.astrobody {
-        background-color: #FFDD53;
-        border: 30px solid rgba(255, 185, 30, 0.9);
-        opacity: .9;
-        border-top: 30px solid rgba(0,0,0,0);
-        border-left: 30px solid rgba(0,0,0,0);
-        border-radius: 150px;
-        //box-shadow: 0 0 35px #2187e7;
-        width: 150px;
-        height: 150px;
-        margin: 500px auto;
-        -moz-animation: spin 2s infinite linear;
-        -webkit-animation: spin 2s infinite linear;
-    }*/
-    .sun {
-        background-color: #FFDD53;
-        border: 10px solid rgba(255, 185, 30, 0.9);
-        opacity: .9;
-        border-top: 10px solid rgba(0,0,0,0);
-        border-left: 10px solid rgba(0,0,0,0);
-        border-radius: 100%;
-        //box-shadow: 0 0 35px orange;
-        width: 75px;
-        height: 75px;
-        margin: 500px auto;
-        -moz-animation: spin 10s infinite linear;
-        -webkit-animation: spin 10s infinite linear;
-    }
-    .mercury {
-        background-color: #64DBFF;
-        border: 5px solid rgba(0,183,229,0.9);
-        opacity: .9;
-        border-top: 5px solid rgba(0,0,0,0);
-        border-left: 5px solid rgba(0,0,0,0);
-        border-radius: 100%;
-        //box-shadow: 0 0 15px #2187e7;
-        width: 10px;
-        height: 10px;
-        margin: 100px auto;
-        -moz-animation: spinoff .75s infinite linear;
-        -webkit-animation: spinoff .75s infinite linear;
-    }
-    .venus {
-        background-color: lightpink;
-        border: 2px solid pink;
-        opacity: .9;
-        border-top: 2px solid rgba(0,0,0,0);
-        border-left: 2px solid rgba(0,0,0,0);
-        border-radius: 100%;
-        //box-shadow: 0 0 15px #2187e7;
-        width: 20px;
-        height: 20px;
-        margin: 50px auto;
-        -moz-animation: spinoff 2s infinite linear;
-        -webkit-animation: spinoff 2s infinite linear;
-    }
-    .earth {
-        background-color: #82B794;
-        border: 20px solid #6F9D7F;
-        opacity: .9;
-        border-top: 20px solid rgba(0, 0, 0, 0);
-        border-left: 20px solid rgba(0, 0, 0, 0);
-        border-radius: 100%;
-        width: 20px;
-        height: 20px;
-        margin: 100px auto;
-        -moz-animation: spin 3s infinite linear;
-        -webkit-animation: spin 3s infinite linear;
-    }
-    .moon {
-        background-color: #DDD;
-        border: 2px solid #EEE;
-        opacity: .9;
-        border-top: 2px solid #EEE;
-        border-left: 2px solid #EEE;
-        border-radius: 100%;
-        width: 10px;
-        height: 10px;
-        margin: 70px auto;
-        -moz-animation: spin 2s infinite linear;
-        -webkit-animation: spin 2s infinite linear;
-    }
-    .mars {
-        background-color: #FF5959;
-        border: 10px solid rgba(255, 0, 0, 0.9);
-        opacity: .9;
-        border-top: 10px solid rgba(0,0,0,0);
-        border-left: 10px solid rgba(0,0,0,0);
-        border-radius: 100%;
-        //box-shadow: 0 0 15px #2187e7;
-        width: 20px;
-        height: 20px;
-        margin: 50px auto;
-        -moz-animation: spin 10s infinite linear;
-        -webkit-animation: spin 10s infinite linear;
-    }
-
-    @-webkit-keyframes spin {
-        0% {
-            -webkit-transform: rotate(0deg);
+        body {
+          background: #222;
+        }
+        .center {
+            background-color: orange;
+            border: 8px solid orange;
+            opacity: 1;
+            border-top: 8px solid darkorange;
+            border-left: 8px solid darkorange;
+            border-radius: 100%;
+            //box-shadow: 0 0 15px orange;
+            width: 80px;
+            height: 80px;
+            margin: 0 auto;
+            position: absolute;
+            top: 200px;
+            left: 300px;
+            -moz-animation: spin 8s infinite linear;
+            -webkit-animation: spin 8s infinite linear;
+        }
+        .center1 {
+            background-color: orange;
+            border: 8px solid orange;
+            opacity: 1;
+            border-top: 8px solid darkorange;
+            border-left: 8px solid darkorange;
+            border-radius: 100%;
+            //box-shadow: 0 0 15px orange;
+            width: 80px;
+            height: 80px;
+            margin: 0 auto;
+            position: absolute;
+            top: 200px;
+            left: 300px;
+            -moz-animation: spinoff 9s infinite linear;
+            -webkit-animation: spinoff 9s infinite linear;
         }
 
-        100% {
-            -webkit-transform: rotate(360deg);
-        };
-    }
-    @-webkit-keyframes spinoff {
-        10% {
-            -webkit-transform: rotate(0deg);
+        .planet1 {
+            background-color: #666;
+            border: 5px solid #666;
+            opacity: .9;
+            border-top: 5px solid #555;
+            border-left: 5px solid #555;
+            border-radius: 100%;
+            //box-shadow: 0 0 35px #2187e7;
+            width: 10px;
+            height: 10px;
+            margin: 110px auto;
+            -moz-animation: spin 10s infinite linear;
+            -webkit-animation: spin 10s infinite linear;
         }
 
-        100% {
-            -webkit-transform: rotate(-360deg);
-        };
-    }
+        .planet2 {
+            background-color: rgba(0,183,229,0.5);
+            border: 8px solid rgba(0,183,229,0.9);
+            opacity: .9;
+            border-top: 8px solid rgba(0,0,0,0);
+            border-left: 8px solid rgba(0,0,0,0);
+            border-radius: 100%;
+            //box-shadow: 0 0 15px #2187e7;
+            width: 10px;
+            height: 10px;
+            margin: 50 auto;
+            position: relative;
+            top: -185px;
+            -moz-animation: spinoff 3s infinite linear;
+            -webkit-animation: spinoff 3s infinite linear;
+        }
+
+        .moon {
+            background-color: #DDD;
+            border: 1px solid #DDD;
+            opacity: .9;
+            border-top: 1px solid #CCC;
+            border-left: 1px solid #CCC;
+            border-radius: 100%;
+            //box-shadow: 0 0 35px #2187e7;
+            width: 5px;
+            height: 5px;
+            margin: 30px auto;
+            -moz-animation: spin 10s infinite linear;
+            -webkit-animation: spin 10s infinite linear;
+        }
+        .planet3 {
+            background-color: green;
+            border: 5px solid green;
+            opacity: .9;
+            border-top: 5px solid #555;
+            border-left: 5px solid #555;
+            border-radius: 100%;
+            //box-shadow: 0 0 35px #2187e7;
+            width: 10px;
+            height: 10px;
+            margin: 160px auto;
+            -moz-animation: spin 5s infinite linear;
+            -webkit-animation: spin 5s infinite linear;
+        }
+
+        @-webkit-keyframes spin {
+            0% {
+                -webkit-transform: rotate(0deg);
+            }
+
+            100% {
+                -webkit-transform: rotate(360deg);
+            };
+        }
+
+
+        @-webkit-keyframes spinoff {
+            0% {
+                -webkit-transform: rotate(0deg);
+            }
+
+            100% {
+                -webkit-transform: rotate(-360deg);
+            };
+        }
     </style>
   </head>
   <body>
-  <div class="astrobody sun">
-    <div class="astrobody mercury"></div>
-    <div class="astrobody venus"></div>
-    <div class="astrobody earth">
-      <div class="astrobody moon"></div>
+    <div class="center">
+      <div class="planet1"></div>
     </div>
-    <div class="astrobody mars"></div>
-  </div>
+    <div class="center">
+      <div class="planet2">
+        <div class="moon"></div>
+      </div>
+    </div>
+    <div class="center1">
+      <div class="planet3"></div>
+    </div>
   </body>
 </html>
